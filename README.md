@@ -43,7 +43,9 @@ Instead of manually:
 | 🚀 **Auto Review** | Optionally auto-clicks the most recent match's Review button |
 | 🧭 **Full Onboarding** | Automatically completes all 8 onboarding steps |
 | 🖥️ **Clean GUI** | Dark-themed Tkinter interface that doesn't freeze during automation |
-
+| 🖼️ **Custom Background** | Set any image as background with adjustable opacity |
+| 💾 **Auto-save Settings** | All preferences saved automatically for next launch |
+| 📦 **One-click Build** | `build.bat` creates standalone `.exe` via PyInstaller |
 ---
 
 ## 🔧 Requirements
@@ -123,13 +125,21 @@ START clicked
 text
 
 WFChessReviewerTdev/
-├── main.py              # Main application (single file)
-├── requirements.txt     # Python dependencies
-├── LICENSE              # MIT License
-├── README.md            # This file
-├── .gitignore           # Git ignore rules
+├── main.py                          ← App chính
+├── requirements.txt                 ← playwright + Pillow
+├── build.bat                        ← Build .exe (Windows)
+├── build.sh                         ← Build (Linux/Mac)
+├── WFChessReviewerTdev.spec         ← PyInstaller spec
+├── setup.py                         ← Package config
+├── LICENSE                          ← MIT
+├── README.md                        ← Docs
+├── CHANGELOG.md                     ← Version log
+├── release_notes.md                 ← GitHub release text
+├── .gitignore                       ← Ignore rules
 └── assets/
-    └── screenshot.png   # App screenshot for README
+    ├── icon.ico                     ← Window icon
+    ├── icon.png                     ← Icon PNG backup
+    └── screenshot.png               ← Screenshot
 ⚠️ Disclaimer
 This tool is for educational and personal use only. It is designed to help users quickly review publicly available chess games. Please use responsibly and in accordance with Chess.com's Terms of Service.
 
