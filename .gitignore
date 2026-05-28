@@ -1,74 +1,43 @@
-# ══════════════════════════════════════════════════════════════
-# WFChessReviewerTdev .gitignore
-# ══════════════════════════════════════════════════════════════
-
-# ── Python ───────────────────────────────────────────────────
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
-*.egg
 *.egg-info/
+*.egg
 dist/
 build/
 eggs/
-parts/
-var/
-sdist/
-develop-eggs/
-.installed.cfg
-lib/
-lib64/
+*.whl
 
-# ── Virtual Environments ─────────────────────────────────────
-.env
-.venv
-env/
+# Virtual environments
 venv/
-ENV/
-.Python
+env/
+.env/
+.venv/
 
-# ── Testing & Coverage ───────────────────────────────────────
-.pytest_cache/
-.coverage
-.coverage.*
-coverage.xml
-htmlcov/
-.tox/
-.nox/
-
-# ── Type Checking ─────────────────────────────────────────────
-.mypy_cache/
-.dmypy.json
-dmypy.json
-
-# ── IDE & Editors ─────────────────────────────────────────────
-.idea/
+# IDE
 .vscode/
+.idea/
 *.swp
 *.swo
 *~
+.project
+.settings/
+
+# OS
 .DS_Store
 Thumbs.db
+desktop.ini
+*.lnk
 
-# ── Project-specific generated files ─────────────────────────
-screenshots/
-logs/
-credentials/
+# Playwright
+playwright/.cache/
 
-# ── Keep directory structure ──────────────────────────────────
-!screenshots/.gitkeep
-!logs/.gitkeep
-!credentials/.gitkeep
+# Logs
+*.log
 
-# ── Playwright ────────────────────────────────────────────────
-playwright-report/
-test-results/
-
-# ── Distribution ─────────────────────────────────────────────
-*.whl
+# Distribution
+*.zip
 *.tar.gz
-MANIFEST
-
-# ── Jupyter (if ever used) ────────────────────────────────────
-.ipynb_checkpoints/
+*.exe
